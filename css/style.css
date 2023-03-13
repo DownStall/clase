@@ -1,6 +1,14 @@
 body {
-    background-color: crimson;
+    background-color: rgb(235, 216, 220);
 }
 img:hover
 {background-color:solid darkblue ;
 }
+
+/* estilo por id */
+#Nombre{
+    border: 1px solid rebeccapurple;
+    border-radius: 3px ;
+    background-color: aquamarine;
+
+}	
