@@ -46,6 +46,7 @@ nav {
 .enlaces-header {
     font-weight: 300;
     margin: auto;
+    transition: all ease-in-out 0.6s;
 }
 
 .nav .enlaces-header a {
@@ -60,7 +61,7 @@ nav {
     color: #fff;
     background-color: #fd0059;
     border-color: #ac5151;
-    transition: all ease-in-out .5s;
+    transition: all ease-in-out .4s;
 }
 
 .hamburguer {
@@ -97,6 +98,7 @@ nav {
     height: 300px;
     margin-left: 50px;
     animation: ease-in animacion 0.5s;
+    border-radius: 50%;
 }
 
 .textos-header {
@@ -185,6 +187,55 @@ color: #fff;
     color: #fff;
 }
 
+/*##################################### CERTIFICADOS #################################################*/
+
+
+.section-certificates .title{
+    display: block;
+    margin: 15px 0 0 0;
+    width: 100%;
+    text-align:center ;
+    text-transform: uppercase;
+}
+
+.content-certificates{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+.certificates{
+    width: 22%;
+    border-radius: 5px;
+    border: 2px solid gray;
+    padding: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.certificates img{
+    height: 80px;
+    width: auto;
+}
+
+.certificates a{
+    font-size: 12px;
+    color: gray;
+    text-decoration: none;
+}
+
+.certificates:hover{
+    background-color: #5d6678;
+    box-shadow: 0 0 8px gray;
+    transition: all ease-in-out .6s;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.certificates a:hover{
+    color: aliceblue;
+}
 
 /* ########################## FOOTER ############################*/
 footer {
@@ -205,6 +256,7 @@ footer {
 }
 .partFoot img {
     width: 40%;
+    border-radius: 60%;
 }
 
 .partFoot h4 {
@@ -268,6 +320,7 @@ footer {
 
 .social-media > a > i:hover {
     background-color: #fd0000;
+    border-color: #fd0000;
 }
 
 /* ########################## Media Query ############################*/
@@ -278,7 +331,7 @@ footer {
     }
     .enlaces-header {
         position: fixed;
-        background-color: #d03d3d;
+        background-color: #00ccff;
         top: 0;
         right: 0;
         width: 100%;
@@ -286,7 +339,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        clip-path: circle(0.0% at 0 0);
+        clip-path: circle(0.0% at 1% 2%);
     
     }
 .nav .enlances-header a{
@@ -306,6 +359,55 @@ footer {
     }
 
     .nav .hamburgueropen{
-        clip-path: circle(150.0% at 0 0);
+        clip-path: circle(150.0% at 1% 2%);
+    }
+    h1{
+        font-size: 28px;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+
+    .textos-header{
+        margin: 0;
+    }
+
+    .contenido-header{
+        display: block;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .contenido-header > img {
+        width: 150px;
+        height: 150px;
+        margin: 25px 0 0 0;
+        animation: ease-in animacion 0.5s;
+        border-radius: 50%;
+    }
+        /*##################################### SECTION EDUCATION #################################################*/
+
+    .education{
+        width: 80%;
+        margin-bottom: 15px;
+
+    }
+        /*##################################### SECTION CERTIFICATES #################################################*/
+    
+    .certificates{
+        width: 50%;
+    }
+    
+    .certificates img {
+        height: 80px;
+    }
+        /*##################################### SECTION FOOTER #################################################*/
+
+    .partFooter img{
+        display: none;
+    }    
+
+    .partFooter{
+        width: 80%;
     }
 }
+
